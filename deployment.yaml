@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnetcore-test
+  namespace: ojt-test
+spec:
+  selector:
+    matchLabels:
+      app: dotnetcore-test
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: dotnetcore-test
+    spec:
+      imagePullSecrets:
+      - name: secret-key
+      containers:
+      - name: nginx
+        image: 192.168.1.199:5000/dotnetcore-test:BuildIddotnet-testv
+        ports:
+        - containerPort: 80
