@@ -18,5 +18,12 @@ pipeline {
                 } 
             }
         } 
+         stage('Push') { 
+            steps { 
+                script { 
+                    sh "docker push aydemirkala/dotnet-test:v1"
+                } 
+            }
+        } 
     }
 }
