@@ -25,12 +25,10 @@ pipeline {
                 } 
             }
         } 
-        stage('Docker Logout') { 
-            steps { 
-                script { 
-                    sh "docker logout"
-                } 
-            }
+    }
+    post('Docker Logout') { 
+        always { 
+           sh "docker logout"
         } 
     }
 }
