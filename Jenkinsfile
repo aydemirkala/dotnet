@@ -1,30 +1,21 @@
 pipeline { 
     environment { 
-        registry = "aydemirkala/dotnet-test" 
-        registryCredential = 'aydemirkala' 
-        dockerImage = '' 
+        DOCKERHUB_CREDENTIALS = credentials('aydemirkala')
     }
     agent any 
     stages{
         stage('Building our image') { 
             steps { 
                 script { 
-                    dockerImage = docker.build registry + ":$BUILD_NUMBER" 
+                    sh "docker build -t aydemirkala/dotnet-test:v1"
                 }
             } 
         }
-        stage('Deploy our image') { 
+        stage('Login') { 
             steps { 
                 script { 
-                    docker.withRegistry( '', registryCredential ) { 
-                        dockerImage.push() 
-                    }
+                    sh "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"
                 } 
-            }
-        } 
-        stage('Cleaning up') { 
-            steps { 
-                sh "docker rmi $registry:$BUILD_NUMBER" 
             }
         } 
     }
