@@ -5,6 +5,7 @@ pipeline {
         dockerImage = '' 
     }
     agent any 
+    stages{
         stage('Building our image') { 
             steps { 
                 script { 
@@ -27,4 +28,4 @@ pipeline {
             }
         } 
     }
-
+}
