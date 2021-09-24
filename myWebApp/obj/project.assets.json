@@ -8,26 +8,27 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ertan.efe\\.nuget\\packages\\": {}
+    "C:\\Users\\aydem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ertan.efe\\Documents\\azuredevops\\dotnetcore-test\\myWebApp\\myWebApp.csproj",
+      "projectUniqueName": "d:\\Aydemir\\VisualStudioCode\\Remote\\DotNet\\dotnet\\myWebApp\\myWebApp.csproj",
       "projectName": "myWebApp",
-      "projectPath": "C:\\Users\\ertan.efe\\Documents\\azuredevops\\dotnetcore-test\\myWebApp\\myWebApp.csproj",
-      "packagesPath": "C:\\Users\\ertan.efe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ertan.efe\\Documents\\azuredevops\\dotnetcore-test\\myWebApp\\obj\\",
+      "projectPath": "d:\\Aydemir\\VisualStudioCode\\Remote\\DotNet\\dotnet\\myWebApp\\myWebApp.csproj",
+      "packagesPath": "C:\\Users\\aydem\\.nuget\\packages\\",
+      "outputPath": "d:\\Aydemir\\VisualStudioCode\\Remote\\DotNet\\dotnet\\myWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ertan.efe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aydem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -62,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

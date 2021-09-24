@@ -436,3 +436,29 @@ $RECYCLE.BIN/
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+myWebApp/bin/Debug/net5.0/myWebApp.dll
+myWebApp/bin/Debug/net5.0/myWebApp.exe
+myWebApp/bin/Debug/net5.0/myWebApp.pdb
+myWebApp/bin/Debug/net5.0/myWebApp.runtimeconfig.dev.json
+myWebApp/bin/Debug/net5.0/myWebApp.Views.dll
+myWebApp/bin/Debug/net5.0/myWebApp.Views.pdb
+myWebApp/obj/myWebApp.csproj.nuget.dgspec.json
+myWebApp/obj/myWebApp.csproj.nuget.g.props
+myWebApp/obj/project.assets.json
+myWebApp/obj/project.nuget.cache
+myWebApp/obj/Debug/net5.0/apphost.exe
+myWebApp/obj/Debug/net5.0/myWebApp.assets.cache
+myWebApp/obj/Debug/net5.0/myWebApp.csproj.FileListAbsolute.txt
+myWebApp/obj/Debug/net5.0/myWebApp.dll
+myWebApp/obj/Debug/net5.0/myWebApp.GeneratedMSBuildEditorConfig.editorconfig
+myWebApp/obj/Debug/net5.0/myWebApp.genruntimeconfig.cache
+myWebApp/obj/Debug/net5.0/myWebApp.pdb
+myWebApp/obj/Debug/net5.0/myWebApp.Views.dll
+myWebApp/obj/Debug/net5.0/myWebApp.Views.pdb
+myWebApp/obj/Debug/net5.0/Razor/Pages/_ViewImports.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/_ViewStart.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/Privacy.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
+myWebApp/obj/Debug/net5.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs

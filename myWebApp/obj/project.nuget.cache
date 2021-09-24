@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CmU55pjmirhp5DFFexCMsf/USCFKwVc3FGA4IQpomkaUeSWT9uKGTjMTBHCORx9YxNsTZzuzlWSRwbBC9Ehagw==",
+  "dgSpecHash": "VU3jdbQYcsDLfNHz8uk3BDdwzMSibU/W2+Jiy0u3a14i54h2ujm7KUlV88WM3C8+TV4uoLEWXGJ/3hMZX6EtzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ertan.efe\\Documents\\azuredevops\\dotnetcore-test\\myWebApp\\myWebApp.csproj",
+  "projectFilePath": "d:\\Aydemir\\VisualStudioCode\\Remote\\DotNet\\dotnet\\myWebApp\\myWebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
