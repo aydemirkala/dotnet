@@ -15,6 +15,13 @@ COPY ["myWebApp/myWebApp.csproj", "myWebApp/"]
 RUN dotnet restore "myWebApp/myWebApp.csproj"
 COPY . .
 WORKDIR "/src/myWebApp"
+RUN dotnet add package SkyAPM.Agent.AspNetCore \
+    && export ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore \
+    && export SKYWALKING__SERVICENAME=myWebApp \
+    && dotnet tool install -g SkyAPM.DotNet.CLI \
+    && export PATH="$PATH:/root/.dotnet/tools" \
+    && dotnet skyapm config myWebApp skywalking-oap.test-integration-apisix.svc.cluster.local:11800
+
 RUN dotnet build "myWebApp.csproj" -c Release -o /app/build
 
 FROM build AS publish
@@ -22,5 +29,7 @@ RUN dotnet publish "myWebApp.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
+ENV ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
+ENV SKYWALKING__SERVICENAME=myWebApp
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "myWebApp.dll"]
