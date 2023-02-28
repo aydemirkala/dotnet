@@ -23,7 +23,7 @@ RUN dotnet add package SkyAPM.Agent.AspNetCore \
     && dotnet skyapm config myWebApp skywalking-oap.test-integration-apisix.svc.cluster.local:11800
 
 RUN dotnet build "myWebApp.csproj" -c Release -o /app/build
-RUN dotnet pack /p:Version=1.1.0 -c Release --no-restore -o /app/build 
+RUN dotnet pack /p:Version=1.0.0 -c Release --no-restore -o /app/build 
 RUN dotnet nuget push /app/build/*.nupkg --source https://api.nuget.org/v3/index.json --api-key "oy2gzqvlwvq4lqfemw2qlcjtwss54xpehktyeaedij5yya"
 
 FROM build AS publish
