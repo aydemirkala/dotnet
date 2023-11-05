@@ -4,7 +4,7 @@ metadata:
   name: Aydemir-github
   description: Component with GitHub actions enabled.
   annotations:
-    github.com/project-slug: 'aydemirkala/dotnet'
+    github.com/project-slug: 'aydemirkala/dotnet-hello'
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
