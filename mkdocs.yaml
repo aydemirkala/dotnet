@@ -1,0 +1,9 @@
+site_name: 'Aydemir Documentation'
+repo_url: https://github.com/aydemirkala/dotnet/
+edit_uri: 'blob/master/docs/'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
