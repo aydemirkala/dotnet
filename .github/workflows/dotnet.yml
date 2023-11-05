@@ -1,0 +1,29 @@
+name: CI-CD-Worker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  APP_NAME: dotnet
+
+jobs:
+  ci-cd-worker-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Replace NUGET_API_KEY
+        run: |
+          sed -i -e "s/NUGET_API_KEY/${{ secrets.NUGET_API_KEY }}/g" ./Dockerfile
+          
+      - name: Build and push Api
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: dotnet-hello:${{ github.sha }}
