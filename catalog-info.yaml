@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Aydemir-github
+  description: Component with GitHub actions enabled.
+  annotations:
+    github.com/project-slug: 'aydemirkala/dotnet'
+spec:
+  type: service
+  lifecycle: production
+  owner: engineering-team
