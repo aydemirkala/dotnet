@@ -6,6 +6,10 @@ metadata:
   annotations:
     github.com/project-slug: 'aydemirkala/dotnet'
     backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://github.com/aydemirkala/dotnet
+      title: DotnetHello
+      icon: dashboard
 spec:
   type: service
   lifecycle: production
